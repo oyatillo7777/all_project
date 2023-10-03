@@ -1,4 +1,4 @@
-import 'package:all_project/7-lesson%20Bloc+dio%20and%20%20listga%20otkazish/model/post.dart';
+import 'package:all_project/6-lesson%20Bloc+dio%20and%20%20listga%20otkazish/model/post.dart';
 import 'package:dio/dio.dart';
 
 class Networking {

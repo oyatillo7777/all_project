@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:all_project/7-lesson%20Bloc+dio%20and%20%20listga%20otkazish/bloc/post_bloc.dart';
+import 'package:all_project/6-lesson%20Bloc+dio%20and%20%20listga%20otkazish/bloc/post_bloc.dart';
 
 void main() {
   runApp(

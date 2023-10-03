@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:all_project/7-lesson%20Bloc+dio%20and%20%20listga%20otkazish/networking/networking.dart';
+import 'package:all_project/6-lesson%20Bloc+dio%20and%20%20listga%20otkazish/networking/networking.dart';
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 
