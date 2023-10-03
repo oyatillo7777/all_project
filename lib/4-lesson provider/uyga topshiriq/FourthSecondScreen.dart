@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class FourthSecondScreen extends StatefulWidget {
-   FourthSecondScreen({Key? key});
+  FourthSecondScreen({Key? key});
 
   @override
   _FourthSecondScreenState createState() => _FourthSecondScreenState();
@@ -17,7 +17,7 @@ class _FourthSecondScreenState extends State<FourthSecondScreen> {
       child: Builder(builder: (BuildContext context) {
         return Scaffold(
           body: Padding(
-            padding:  EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(8.0),
             child: Container(
               height: MediaQuery.sizeOf(context).height,
               child: Column(
@@ -38,7 +38,7 @@ class _FourthSecondScreenState extends State<FourthSecondScreen> {
                     children: [
                       InkWell(
                         onTap: () {
-                          Provider.of<ColorProvider>(context,listen: false)
+                          Provider.of<ColorProvider>(context, listen: false)
                               .changeColor(Colors.blue);
                         },
                         child: Container(
@@ -49,7 +49,7 @@ class _FourthSecondScreenState extends State<FourthSecondScreen> {
                       ),
                       InkWell(
                         onTap: () {
-                          Provider.of<ColorProvider>(context,listen: false)
+                          Provider.of<ColorProvider>(context, listen: false)
                               .changeColor(Colors.red);
                         },
                         child: Container(
@@ -60,7 +60,7 @@ class _FourthSecondScreenState extends State<FourthSecondScreen> {
                       ),
                       InkWell(
                         onTap: () {
-                          Provider.of<ColorProvider>(context,listen: false)
+                          Provider.of<ColorProvider>(context, listen: false)
                               .changeColor(Colors.green);
                         },
                         child: Container(
