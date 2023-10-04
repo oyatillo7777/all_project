@@ -16,6 +16,7 @@ class Lock extends StatefulWidget {
 class _LockState extends State<Lock> {
   TextEditingController _againController = TextEditingController();
   String parol = '';
+  bool isVisible = true;
 
   void parolniOqi() async {
     parol = widget.sharedPreferences.getString('parol') ?? '';
@@ -38,9 +39,25 @@ class _LockState extends State<Lock> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextField(
+              obscureText: isVisible,
               controller: _againController,
               decoration: InputDecoration(
-                  hintText: "parolni qayta kiriting",
+                  suffixIcon: isVisible
+                      ? InkWell(
+                          onTap: () {
+                            setState(() {
+                              isVisible = !isVisible;
+                            });
+                          },
+                          child: Icon(Icons.panorama_fish_eye))
+                      : InkWell(
+                          onTap: () {
+                            setState(() {
+                              isVisible = !isVisible;
+                            });
+                          },
+                          child: Icon(Icons.remove_red_eye)),
+                  hintText: "parolni  kiriting",
                   border: OutlineInputBorder()),
             ),
           ),

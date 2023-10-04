@@ -35,10 +35,9 @@ class _PinEntryState extends State<PinEntry> {
               TextField(
                 controller: _pinController,
                 obscureText: true,
-                decoration:  InputDecoration(
+                decoration: InputDecoration(
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10)
-                  ),
+                      borderRadius: BorderRadius.circular(10)),
                   labelText: 'Enter PIN',
                 ),
               ),
@@ -46,10 +45,9 @@ class _PinEntryState extends State<PinEntry> {
               TextField(
                 controller: _againController,
                 obscureText: true,
-                decoration:  InputDecoration(
+                decoration: InputDecoration(
                   border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10)
-                  ),
+                      borderRadius: BorderRadius.circular(10)),
                   labelText: 'Again Enter PIN',
                 ),
               ),
@@ -62,7 +60,6 @@ class _PinEntryState extends State<PinEntry> {
                         context,
                         MaterialPageRoute(
                             builder: (_) => Lock(widget.sharedPreferences)));
-
                   }
                   // You can perform other actions here after saving the PIN
                 },
