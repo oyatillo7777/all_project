@@ -49,14 +49,14 @@ class _EightethState extends State<Eighteth> {
             return GestureDetector(
               onTap: () => controller.animateToPage(_current),
               child: Container(
-                height: 12,
-                width: 12,
-                margin: EdgeInsets.symmetric(horizontal: 4, vertical: 8),
-                decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color:
-                        _current == e.key ? Colors.blue : Colors.cyanAccent),
-              ),
+                  height: 12,
+                  width: 12,
+                  margin: EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color:
+                          _current == e.key ? Colors.blue : Colors.cyanAccent),
+                  color: _current == e.key ? Colors.blue : Colors.cyanAccent),
             );
           }).toList(),
         )
