@@ -1,4 +1,5 @@
 import 'package:all_project/1-lesson%20ikki%20soni%20qoshish/main.dart';
+import 'package:all_project/8-lesson%20corousel%20slider/main.dart';
 import 'package:flutter/material.dart';
 
 import '2-lesson password va TextFiledni bor sirini ochish/main.dart';
@@ -22,7 +23,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: FourthSecondScreen(),
+      home: Eighteth(),
     );
   }
 }
